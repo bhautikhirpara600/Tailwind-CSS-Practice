@@ -175,6 +175,9 @@
   .max-w-36 {
     max-width: calc(var(--spacing) * 36);
   }
+  .max-w-\[1440px\] {
+    max-width: 1440px;
+  }
   .items-center {
     align-items: center;
   }
