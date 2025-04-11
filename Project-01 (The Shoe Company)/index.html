@@ -4,20 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Shoe Company</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body class="bg-[#000000] text-[#FFFFFF] font-archivo">
-    <header class="flex items-center justify-between px-10 mx-auto max-w-[1440px]">
-        <div class="max-w-36">
+    <header class="flex items-center justify-between c-width">
+        <div class="max-w-22 media415:max-w-25 media575:max-w-36">
             <img class="w-full" src="./images/logo.png" alt="logo">
         </div>
-        <nav class="font-bold text-2xl space-x-10">
+        <nav class="font-bold hidden media750:block media950:text-xl media1150:text-2xl space-x-6 media950:space-x-10">
             <a href="#home">Home</a>
             <a href="#how-it-works">How It Works?</a>
             <a href="#about">About</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#contact-us">Contact Us</a>
         </nav>
+        <div class="media750:hidden">
+            <img src="./images/hamburger-menu.svg" alt="hamburger-icon">
+        </div>
     </header>
+    <main>
+        <section id="home" class="relative c-width flex flex-col media750:flex-row  items-center justify-center gap-0 media750:gap-24 mt-10">
+            <div class="-z-10 media750:max-w-[450px] media860:max-w-[550px] media1030:max-w-[620px] media1150:max-w-[720px] absolute right-auto media750:right-0 -top-[400px] media415:-top-[500px] media575:-top-[706px] media750:-top-[906px] media860:-top-[1156px] media1030:-top-[1256px] media1150:-top-[1406px] ">
+                <img class="w-full" src="./images/black-background-hero.png" alt="">
+                <img class="hidden media750:w-full media750:block" src="./images/background-road.png" alt="background-road">
+                <img class="w-full media750:hidden" src="./images/background-road-mobile.png" alt="background-road-mobile">
+            </div>
+            
+            <div class="font-bold text-3xl media415:text-4xl media575:text-5xl media950:text-6xl media1030:text-7xl self-start media750:self-auto media415:space-y-2 media575:space-y-4">
+                <span class="inline-block">THE</span>
+                <br>
+                <span class="inline-block">SHOE</span>
+                <br>
+                <span class="inline-block">COMPANY</span>
+            </div>
+            <div class="max-w-2xl min-w-72">
+                <img class="w-full" src="./images/the-white-shoe-hero-image.png" alt="the-white-shoe-hero-image">
+            </div>
+        </section>
+    </main>
 </body>
 </html>

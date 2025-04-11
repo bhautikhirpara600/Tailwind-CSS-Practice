@@ -3,4 +3,17 @@
 
 @theme {
     --font-archivo: "Archivo", sans-serif;
+    --breakpoint-media1150: 1150px;
+    --breakpoint-media1030: 1030px;
+    --breakpoint-media950: 950px;
+    --breakpoint-media860: 860px;
+    --breakpoint-media750: 750px;
+    --breakpoint-media575: 575px;
+    --breakpoint-media415: 415px;
+}
+
+@layer {
+    .c-width {
+        @apply px-5 md:px-10 2xl:px-0 mx-auto max-w-[1440px];
+    }
 }
