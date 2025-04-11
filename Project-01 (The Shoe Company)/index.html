@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,13 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/output.css">
 </head>
-<body class="bg-[#000000] text-[#FFFFFF] font-archivo">
+
+<body class="bg-[#000000] text-[#FFFFFF] font-archivo font-bold">
     <header class="flex items-center justify-between c-width">
         <div class="max-w-22 media415:max-w-25 media575:max-w-36">
             <img class="w-full" src="./images/logo.png" alt="logo">
         </div>
-        <nav class="font-bold hidden media750:block media950:text-xl media1150:text-2xl space-x-6 media950:space-x-10">
+        <nav class="hidden media750:block media950:text-xl media1150:text-2xl space-x-6 media950:space-x-10">
             <a href="#home">Home</a>
             <a href="#how-it-works">How It Works?</a>
             <a href="#about">About</a>
@@ -24,14 +26,18 @@
         </div>
     </header>
     <main>
-        <section id="home" class="relative c-width flex flex-col media750:flex-row  items-center justify-center gap-0 media750:gap-24 mt-10">
-            <div class="-z-10 media750:max-w-[450px] media860:max-w-[550px] media1030:max-w-[620px] media1150:max-w-[720px] absolute right-auto media750:right-0 -top-[400px] media415:-top-[500px] media575:-top-[706px] media750:-top-[906px] media860:-top-[1156px] media1030:-top-[1256px] media1150:-top-[1406px] ">
+        <section id="home"
+            class="relative c-width flex flex-col media750:flex-row  items-center justify-center gap-0 media750:gap-24 mt-10">
+            <div class="-z-10 background-position ">
                 <img class="w-full" src="./images/black-background-hero.png" alt="">
-                <img class="hidden media750:w-full media750:block" src="./images/background-road.png" alt="background-road">
-                <img class="w-full media750:hidden" src="./images/background-road-mobile.png" alt="background-road-mobile">
+                <img class="hidden media750:w-full media750:block" src="./images/background-road.png"
+                    alt="background-road">
+                <img class="w-full media750:hidden" src="./images/background-road-mobile.png"
+                    alt="background-road-mobile">
             </div>
-            
-            <div class="font-bold text-3xl media415:text-4xl media575:text-5xl media950:text-6xl media1030:text-7xl self-start media750:self-auto media415:space-y-2 media575:space-y-4">
+
+            <div
+                class="text-3xl media415:text-4xl media575:text-5xl media950:text-6xl media1030:text-7xl self-start media750:self-auto media415:space-y-2 media575:space-y-4">
                 <span class="inline-block">THE</span>
                 <br>
                 <span class="inline-block">SHOE</span>
@@ -42,6 +48,46 @@
                 <img class="w-full" src="./images/the-white-shoe-hero-image.png" alt="the-white-shoe-hero-image">
             </div>
         </section>
+        <section id="how-it-works" class="mt-30 media415:mt-20 media480:mt-60 media575:mt-10 media610:mt-40 media690:mt-60 media750:mt-20 c-width">
+            <div class="max-w-120 media950:max-w-150 text-2xl media575:text-4xl media950:text-5xl text-center mx-auto pt-10 ">
+                Have they finally made the perfect workout shoe?
+            </div>
+            <div class="pt-10 relative">
+                <div class="max-w-36 media575:max-w-48 media950:max-w-60 flex flex-col absolute top-[40px] media1150:top-0 left-0 media1300:left-[40px] media1536:left-[120px]">
+                    <div>
+                        <h2 class="text-xl media575:text-2xl media950:text-3xl mb-2">THE HEEL</h2>
+                        <p class="font-normal text-xs media575:text-[16px] media950:text-lg">The heel is well-built, has appropriate elevation and is not too rigid.</p>
+                    </div>
+                    <div class="max-w-28 media575:max-w-36 media1150:max-w-48 media1150:self-center media1300:self-end rotate-45 media950:rotate-15 media1300:rotate-0">
+                        <img class="w-full" src="./images/arrow-1.png" alt="arrow-1">
+                    </div>
+                </div>
+
+                <div class="max-w-36 media575:max-w-48 media950:max-w-60 flex flex-col absolute right-0 media415:right-[40px] media480:right-[80px] media750:right-0 media1150:right-[50px] media1300:right-[110px] media1536:right-[200px] -top-[50px] media575:-top-[100px] media750:top-[100px] media1150:-top-[50px]">
+                    <div class="max-w-32 media575:max-w-40 media1150:max-w-46 rotate-110 media415:rotate-100 media610:rotate-130 media690:rotate-120 media750:rotate-0 media750:-translate-x-[80%] media1300:-translate-x-[100%] translate-y-[200%] media750:translate-y-[70%]">
+                        <img class="w-full" src="./images/arrow-2.png" alt="arrow-2">
+                    </div>
+                    <div>
+                        <h2 class="text-xl media575:text-2xl media950:text-3xl mb-2">THE FRONT</h2>
+                        <p class="font-normal text-xs media575:text-[16px] media950:text-lg">The front is comfortable and adjusts well to the shape of your foot.</p>
+                    </div>
+                </div>
+
+                <div class="max-w-36 media575:max-w-48 media950:max-w-60 flex flex-col absolute -bottom-[100px] media415:-bottom-[80px] media480:-bottom-[50px] media575:-bottom-[100px] media690:-bottom-[50px] media750:-bottom-[10px] media1150:-bottom-[40px] media1536:bottom-0 left-[80px] media950:left-[120px] media1150:left-[250px] media1300:left-[350px]">
+                    <div class="max-w-28 media575:max-w-36 media1150:max-w-48 self-end translate-x-[50%] translate-y-[50%]">
+                        <img class="w-full" src="./images/arrow-3.png" alt="arrow-3">
+                    </div>
+                    <div>
+                        <h2 class="text-xl media575:text-2xl media950:text-3xl mb-2">TRACTION</h2>
+                        <p class="font-normal text-xs media575:text-[16px] media950:text-lg">The shoe has good traction and doesn't slip easily.</p>
+                    </div>
+                </div>
+                <div class="max-w-100 media690:max-w-130 media750:max-w-150 media950:max-w-188 ml-[80px] media750:mx-auto pt-48 media950:pt-30 media1150:pt-10 rotate-8 media950:rotate-6 media1150:rotate-0">
+                    <img class="w-full min-w-[250px]" src="./images/how-it-works-shoe-image.png" alt="how-it-works-shoe-image">
+                </div>
+            </div>
+        </section>
     </main>
 </body>
+
 </html>

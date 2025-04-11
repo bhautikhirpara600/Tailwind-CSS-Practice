@@ -3,17 +3,25 @@
 
 @theme {
     --font-archivo: "Archivo", sans-serif;
+    --breakpoint-media1536: 1536px;
+    --breakpoint-media1300: 1300px;
     --breakpoint-media1150: 1150px;
     --breakpoint-media1030: 1030px;
     --breakpoint-media950: 950px;
     --breakpoint-media860: 860px;
     --breakpoint-media750: 750px;
+    --breakpoint-media690: 690px;
+    --breakpoint-media610: 610px;
     --breakpoint-media575: 575px;
+    --breakpoint-media480: 480px;
     --breakpoint-media415: 415px;
 }
 
 @layer {
     .c-width {
         @apply px-5 md:px-10 2xl:px-0 mx-auto max-w-[1440px];
+    }
+    .background-position {
+        @apply media750:max-w-[450px] media860:max-w-[550px] media1030:max-w-[620px] media1150:max-w-[720px] absolute right-auto media750:right-0 -top-[400px] media415:-top-[500px] media575:-top-[706px] media750:-top-[906px] media860:-top-[1156px] media1030:-top-[1256px] media1150:-top-[1406px];
     }
 }
