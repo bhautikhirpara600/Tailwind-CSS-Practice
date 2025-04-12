@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -7,24 +7,30 @@
     <title>The Shoe Company</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/output.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body class="bg-[#000000] text-[#FFFFFF] font-archivo font-bold">
-    <header class="flex items-center justify-between c-width">
+
+    <header class="flex items-center justify-between c-width relative">
         <div class="max-w-22 media415:max-w-25 media575:max-w-30 media860:max-w-36">
             <img class="w-full" src="./images/logo.png" alt="logo">
         </div>
-        <nav class="hidden media750:block media950:text-xl media1150:text-2xl space-x-6 media950:space-x-10">
+        <nav id="navbar" class="open flex flex-col px-6 py-6 media575:py-10 media750:p-0 rounded-[6px] media750:rounded-0 absolute right-[12px] top-[24px] media415:top-[30px] media575:top-[36px] bg-[#D9D9D980] media750:bg-transparent media750:block text-lg media950:text-xl media1150:text-2xl space-x-0 media750:space-x-6 media950:space-x-10">
             <a href="#home">Home</a>
             <a href="#how-it-works">How It Works?</a>
             <a href="#about">About</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#contact-us">Contact Us</a>
         </nav>
-        <div class="media750:hidden">
+        <div id="hamburger-icon" class="media750:hidden cursor-pointer">
             <img src="./images/hamburger-menu.svg" alt="hamburger-icon">
         </div>
+        <div id="back-aero-icon" class="open media750:hidden cursor-pointer absolute top-[34px] media415:top-[40px] media575:top-[48px] right-[20px]">
+            <img src="./images/back-aero-icon.svg" alt="back-aero-icon">
+        </div>
     </header>
+
     <main>
         <section id="home"
             class="relative c-width flex flex-col media750:flex-row  items-center justify-center gap-0 media750:gap-24 mt-10">
@@ -48,8 +54,9 @@
                 <img class="w-full" src="./images/the-white-shoe-hero-image.png" alt="the-white-shoe-hero-image">
             </div>
         </section>
+
         <section id="how-it-works"
-            class="mt-30 media415:mt-20 media480:mt-60 media575:mt-10 media610:mt-40 media690:mt-60 media750:mt-20 c-width">
+            class="-scroll-mt-[40px] mt-30 media415:mt-20 media480:mt-60 media575:mt-10 media610:mt-40 media690:mt-60 media750:mt-20 c-width">
             <div
                 class="max-w-120 media950:max-w-150 text-2xl media575:text-4xl media950:text-5xl text-center mx-auto pt-10 ">
                 Have they finally made the perfect workout shoe?
@@ -99,8 +106,9 @@
                 </div>
             </div>
         </section>
+
         <section id="about"
-            class="flex flex-col media950:flex-row items-center media950:items-stretch c-width gap-x-15 media1030:gap-x-20 media1150:gap-x-25 mt-28 media480:mt-20 media575:mt-28 media690:mt-20">
+            class="scroll-mt-5 flex flex-col media950:flex-row items-center media950:items-stretch c-width gap-x-15 media1030:gap-x-20 media1150:gap-x-25 mt-28 media480:mt-20 media575:mt-28 media690:mt-20">
             <h2 class="media950:hidden text-4xl media610:text-5xl mb-10">About us</h2>
             <div class="max-w-[400px] media950:max-w-[520px]">
                 <img class="w-full" src="./images/about-us-img.png" alt="about-us-img">
@@ -122,6 +130,7 @@
                 </div>
             </div>
         </section>
+
         <section id="testimonials" class="bg-[url(/images/testimonial-bg-img.png)] bg-cover c-width text-center">
             <h2
                 class="text-3xl media480:text-4xl media1030:text-5xl max-w-[400px] media575:max-w-[550px] media1030:max-w-[750px] mx-auto pt-12 mt-12">
@@ -157,7 +166,8 @@
                 </div>
             </div>
         </section>
-        <section id="contact-us" class="c-width mt-10 media750:mt-20 mb-10 flex flex-col gap-y-10 media950:gap-y-0 media950:flex-row items-center justify-between ">
+
+        <section id="contact-us" class="scroll-mt-5 c-width mt-10 media750:mt-20 mb-10 flex flex-col gap-y-10 media950:gap-y-0 media950:flex-row items-center justify-between ">
             <div class="media1150:ml-10">
                 <h2 class="text-4xl media610:text-[42px] media750:text-5xl mb-4 media750:mb-6">Contact Us</h2>
                 <div class="font-normal media610:text-[18px] media750:text-2xl mb-6">
@@ -183,12 +193,14 @@
             </div>
         </section>
     </main>
+
     <footer class="flex items-center justify-center gap-x-4 mb-5 c-width">
         <div class="max-w-16 media610:max-w-20">
             <img class="w-full" src="./images/logo.png" alt="logo">
         </div>
         <p class="font-normal media610:text-xl">Made with ❤️ By Bhautik Hirpara</p>
     </footer>
+
 </body>
 
 </html>

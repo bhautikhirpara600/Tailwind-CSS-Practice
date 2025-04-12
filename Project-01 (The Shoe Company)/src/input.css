@@ -24,4 +24,8 @@
     .background-position {
         @apply media750:max-w-[450px] media860:max-w-[550px] media1030:max-w-[620px] media1150:max-w-[720px] absolute right-auto media750:right-0 -top-[400px] media415:-top-[500px] media575:-top-[706px] media750:-top-[906px] media860:-top-[1156px] media1030:-top-[1256px] media1150:-top-[1406px];
     }
+    .open {
+        display: none;
+        pointer-events: none;
+    }
 }
