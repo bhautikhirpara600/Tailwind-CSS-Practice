@@ -1,1 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --breakpoint-media1440: 1441px;
+    --breakpoint-media1200: 1200px;
+    --breakpoint-media748: 748px;
+    --breakpoint-media550: 550px;
+}
+
+@layer {
+    .raleway {
+        font-family: "Raleway", sans-serif;
+    }
+
+    .open-sans {
+        font-family: "Open Sans", sans-serif;
+        background-color: #3065f8;
+    }
+
+    .box {
+        @apply max-w-[1440px] mx-auto px-6 media748:px-12 media1440:px-0;
+    }
+}

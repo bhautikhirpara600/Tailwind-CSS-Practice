@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,39 @@
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/output.css">
 </head>
+
 <body>
-    <h1>Fylo landing page</h1>
+    <header class="flex items-center justify-between box py-6 media550:py-12">
+        <div class="max-w-[90px] media550:max-w-[130px] media748:max-w-[165px]">
+            <img class="w-full" src="./images/logo.svg" alt="logo">
+        </div>
+        <nav class="text-[14px] media550:text-[16px] media748:text-xl space-x-4 media550:space-x-12 raleway font-medium media748:font-bold">
+            <a href="#features">Features</a>
+            <a href="#team">Team</a>
+            <a href="#sign-in">Sign in</a>
+        </nav>
+    </header>
+
+    <main class="raleway">
+
+        <section id="features" class="box flex flex-col-reverse media1200:flex-row items-center justify-between gap-y-[40px] media1200:gap-x-[40px] text-center media1200:text-start mt-10 media550:mt-15">
+            <div class="max-w-[470px] media748:max-w-[650px]">
+                <h2 class="font-bold text-[28px] media748:text-[40px] leading-[38px] media748:leading-[50px]">All your files in one secure location, accessible anywhere.</h2>
+                <p class="media748:text-xl my-5 media748:my-8 media1200:my-4">Fylo stores your most important files in one secure location. Access them wherever you need, share
+                    and
+                    collaborate with friends, family, and co-workers.
+                </p>
+                <div class="space-y-3 media1200:space-x-3 flex flex-col items-center media1200:block">
+                    <input class="border border-black px-4 py-2 rounded-[4px] w-[80%] media748:w-[55%]" type="email" placeholder="Enter your email..." required>
+                    <button class="bg-[#3065f8] border border-[#3065f8] text-white px-4 py-2 rounded-[4px] w-[80%] media748:w-[55%] media1200:w-[30%]">Get Started</button>
+                </div>
+            </div>
+            <div class="max-w-[700px]">
+                <img class="w-full" src="./images/illustration-1.svg" alt="illustration-1">
+            </div>
+        </section>
+
+    </main>
 </body>
+
 </html>
