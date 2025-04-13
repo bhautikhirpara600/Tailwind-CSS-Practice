@@ -15,10 +15,14 @@
 
     .open-sans {
         font-family: "Open Sans", sans-serif;
-        background-color: #3065f8;
+        background-color: #070439;
     }
 
     .box {
         @apply max-w-[1440px] mx-auto px-6 media748:px-12 media1440:px-0;
+    }
+
+    .my-shadow {
+        box-shadow: 0 0 10px 4px rgba(235, 235, 235, 1);
     }
 }

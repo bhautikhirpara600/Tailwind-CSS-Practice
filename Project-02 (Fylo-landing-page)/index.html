@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body>
+<body class="text-[#070439]">
     <header class="flex items-center justify-between box py-6 media550:py-12">
         <div class="max-w-[90px] media550:max-w-[130px] media748:max-w-[165px]">
             <img class="w-full" src="./images/logo.svg" alt="logo">
         </div>
-        <nav class="text-[14px] media550:text-[16px] media748:text-xl space-x-4 media550:space-x-12 raleway font-medium media748:font-bold">
+        <nav
+            class="text-[14px] media550:text-[16px] media748:text-xl space-x-4 media550:space-x-12 raleway font-medium media748:font-bold">
             <a href="#features">Features</a>
             <a href="#team">Team</a>
             <a href="#sign-in">Sign in</a>
@@ -23,21 +24,74 @@
 
     <main class="raleway">
 
-        <section id="features" class="box flex flex-col-reverse media1200:flex-row items-center justify-between gap-y-[40px] media1200:gap-x-[40px] text-center media1200:text-start mt-10 media550:mt-15">
+        <section id="features"
+            class="box flex flex-col-reverse media1200:flex-row items-center justify-between gap-y-[40px] media1200:gap-x-[40px] text-center media1200:text-start mt-10 media550:mt-15">
             <div class="max-w-[470px] media748:max-w-[650px]">
-                <h2 class="font-bold text-[28px] media748:text-[40px] leading-[38px] media748:leading-[50px]">All your files in one secure location, accessible anywhere.</h2>
-                <p class="media748:text-xl my-5 media748:my-8 media1200:my-4">Fylo stores your most important files in one secure location. Access them wherever you need, share
+                <h2 class="font-bold text-[28px] media748:text-[40px] leading-[38px] media748:leading-[50px]">All your
+                    files in one secure location, accessible anywhere.</h2>
+                <p class="media748:text-xl my-5 media748:my-8 media1200:my-4">Fylo stores your most important files in
+                    one secure location. Access them wherever you need, share
                     and
                     collaborate with friends, family, and co-workers.
                 </p>
                 <div class="space-y-3 media1200:space-x-3 flex flex-col items-center media1200:block">
-                    <input class="border border-black px-4 py-2 rounded-[4px] w-[80%] media748:w-[55%]" type="email" placeholder="Enter your email..." required>
-                    <button class="bg-[#3065f8] border border-[#3065f8] text-white px-4 py-2 rounded-[4px] w-[80%] media748:w-[55%] media1200:w-[30%]">Get Started</button>
+                    <input class="border border-black px-4 py-2 rounded-[4px] w-[80%] media748:w-[55%]" type="email"
+                        placeholder="Enter your email..." required>
+                    <button
+                        class="bg-[#3065f8] border border-[#3065f8] text-white px-4 py-2 rounded-[4px] w-[80%] media748:w-[55%] media1200:w-[30%]">Get
+                        Started</button>
                 </div>
             </div>
             <div class="max-w-[700px]">
                 <img class="w-full" src="./images/illustration-1.svg" alt="illustration-1">
             </div>
+        </section>
+
+        <div class="max-w-[1536px] mx-auto mt-[80px]">
+            <img class="w-full" src="./images/bg-curve-desktop.svg" alt="bg-curve-desktop">
+        </div>
+        <section id="bg-section" class="max-w-[1536px] mx-auto bg-[#f6f6fe] pb-[80px] media748:pb-[100px]">
+            <section id="team"
+                class="box flex flex-col-reverse media1200:flex-row items-center media1200:items-start justify-between gap-y-[80px] media1200:gap-x-[40px]">
+                <div class="max-w-[700px]">
+                    <h2 class="text-[28px] media748:text-[40px] font-bold mb-2 text-center media1200:text-start">Stay productive, wherever you are</h2>
+                    <div class="media748:text-xl space-y-4 mt-6 mb-4 text-[#585989]">
+                        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of
+                            your
+                            file storage needs.</p>
+                        <p>Securely share files and folders with friends, family and colleagues for live collaboration.
+                            No
+                            email attachments required!</p>
+                    </div>
+                    <div class="underline text-[#3DA08F] underline-[#3DA08F] underline-offset-8 w-max mx-auto media1200:mx-0">
+                        <a class=" media748:text-xl flex items-center gap-x-1 media748:gap-x-2" href="#">
+                            <span>See how Fylo works</span>
+                            <div>
+                                <img class="hidden media748:block" src="./images/icon-arrow - lg.svg" alt="icon-arrow-lg">
+                                <img class="media748:hidden" src="./images/icon-arrow - sm.svg" alt="icon-arrow-sm">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="max-w-[380px] p-6 my-shadow mt-10 rounded-[4px] mx-auto media1200:mx-0">
+                        <div class="max-w-[20px] mb-2"><img class="w-full" src="./images/icon-quotes.svg" alt="icon-quotes"></div>
+                        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our
+                            team has become a well-oiled collaboration machine.</p>
+                        <div class="flex items-center text-[14px] gap-x-3 mt-5">
+                            <div class="max-w-[50px]"><img class="w-full rounded-full"
+                                    src="./images/avatar-testimonial.jpg" alt="avatar-testimonial"></div>
+                            <div class="flex flex-col">
+                                <span><b>Kyle Burton</b></span>
+                                <span>Founder & CEO, Huddle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max-w-[700px]">
+                    <img class="w-full" src="./images/illustration-2.svg" alt="illustration-2">
+                </div>
+            </section>
         </section>
 
     </main>
