@@ -3,6 +3,7 @@
 
 @theme {
     --breakpoint-media1440: 1441px;
+    --breakpoint-media1240: 1240px;
     --breakpoint-media1200: 1200px;
     --breakpoint-media748: 748px;
     --breakpoint-media550: 550px;
@@ -15,7 +16,7 @@
 
     .open-sans {
         font-family: "Open Sans", sans-serif;
-        background-color: #070439;
+        background-color: #bfbfbf;
     }
 
     .box {
